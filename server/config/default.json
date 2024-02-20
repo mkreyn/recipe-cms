@@ -1,8 +1,0 @@
-{
-    "mysql": {
-        "server": "localhost",
-        "user": "root",
-        "password": "root",
-        "db": "recipes"
-    }
-}
