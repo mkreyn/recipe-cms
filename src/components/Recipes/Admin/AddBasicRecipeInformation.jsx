@@ -32,13 +32,13 @@ const AddBasicRecipeInformation = () => {
     const [cuisines, setCuisines] = useState([])
 
     //a particular cuisine being selected by user
-    const [cuisine, setCuisine] = useState('')
+    const [cuisine, setCuisine] = useState(1)
 
     //recipe levels
     const [recipeLevels, setRecipeLevels] = useState([])
 
     //a particular level being selected by user
-    const [recipeLevel, setRecipeLevel] = useState('')
+    const [recipeLevel, setRecipeLevel] = useState(1)
 
     /**
      * Function which formats time in order to comply with the mysql TIME data type
@@ -195,7 +195,7 @@ const AddBasicRecipeInformation = () => {
                 <Form.Group className='mb-3'>
                     <Form.Select id="cuisinesForm" name="cuisinesForm" onChange={(e) => {setCuisine(e.target.value)}}>
                         {cuisines.map((cuisine) => {
-                            return <option key={cuisine.id} name={cuisine.cuisine_name} selected={cuisine.cuisine_name == "Amish and Mennonite"}>{cuisine.cuisine_name}</option>
+                            return <option key={cuisine.id} name={cuisine.cuisine_name} value={cuisine.id}>{cuisine.cuisine_name}</option>
                         })}
                     </Form.Select>
                 </Form.Group>
@@ -233,7 +233,7 @@ const AddBasicRecipeInformation = () => {
                     <Form.Label>Please enter the difficulty level of this recipe: </Form.Label>
                     <Form.Select id="recipeLevel" name="recipeLevel" onChange={(e) => {setRecipeLevel(e.target.value)}}>
                         {recipeLevels.map((recipeLevel) => {
-                            return <option name="recipeLevel" value={recipeLevel.id} selected={recipeLevel.level_name === 'beginner'}>{recipeLevel.level_name}</option>
+                            return <option name="recipeLevel" value={recipeLevel.id}>{recipeLevel.level_name}</option>
                         })}
                     </Form.Select>
                 </Form.Group>
