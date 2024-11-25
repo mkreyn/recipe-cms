@@ -159,3 +159,14 @@ INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Brussels sp
 INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Corn recipes' FROM recipe_categories WHERE category_name = 'Vegetable recipes';
 INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Cucumber recipes' FROM recipe_categories WHERE category_name = 'Vegetable recipes';
 INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Eggplant recipes' FROM recipe_categories WHERE category_name = 'Vegetable recipes';
+
+INSERT INTO recipe_categories (category_name) VALUES ('Sweet');
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Cakes' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Candies' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Cheesecakes' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Cupcakes' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Muffins' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Cookies' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Desserts' FROM recipe_categories WHERE category_name = 'Sweet';
+INSERT INTO recipe_categories (parent_id, category_name) SELECT id, 'Pies' FROM recipe_categories WHERE category_name = 'Sweet';
+

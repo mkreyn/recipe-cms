@@ -1,29 +1,27 @@
-
 nav {
-    height: 60px;
-    background-color: rgb(255, 255, 202);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 30px;
-    padding-right: 30px;
+	height: 60px;
+	background-color: rgb(255, 255, 202);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    column-gap: 15px;
+nav ul.headerMenu {
+	display: flex;
+	list-style: none;
+	column-gap: 15px;
 }
 
 .social_icons {
-    display: flex;
-    column-gap: 25px;
-    align-items: baseline;
-    justify-content: first baseline;
+	display: flex;
+	column-gap: 25px;
+	align-items: baseline;
+	justify-content: first baseline;
 }
 
 .social_icons ul {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
-

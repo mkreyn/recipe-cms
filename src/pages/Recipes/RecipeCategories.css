@@ -1,0 +1,9 @@
+ul {
+	list-style-type: disc;
+	margin-left: 20px;
+}
+
+.category-title {
+	font-weight: 700;
+	font-size: 24px;
+}
